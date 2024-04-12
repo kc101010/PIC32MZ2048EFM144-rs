@@ -26862,8 +26862,8 @@
           </fields>
         </register>
         <register>
-          <name>OFF190</name>
-          <description>OFF190 register</description>
+          <name>OFF192</name>
+          <description>OFF192 register</description>
           <addressOffset>0x840</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -26875,8 +26875,8 @@
           </fields>
         </register>
         <register>
-          <name>OFF190</name>
-          <description>OFF190 register</description>
+          <name>OFF193</name>
+          <description>OFF193 register</description>
           <addressOffset>0x844</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -26888,8 +26888,8 @@
           </fields>
         </register>
         <register>
-          <name>OFF190</name>
-          <description>OFF190 register</description>
+          <name>OFF194</name>
+          <description>OFF194 register</description>
           <addressOffset>0x848</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -26901,8 +26901,8 @@
           </fields>
         </register>
         <register>
-          <name>OFF190</name>
-          <description>OFF190 register</description>
+          <name>OFF196</name>
+          <description>OFF196 register</description>
           <addressOffset>0x850</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -26914,8 +26914,8 @@
           </fields>
         </register>
         <register>
-          <name>OFF190</name>
-          <description>OFF190 register</description>
+          <name>OFF198</name>
+          <description>OFF198 register</description>
           <addressOffset>0x858</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -26927,8 +26927,8 @@
           </fields>
         </register>
         <register>
-          <name>OFF190</name>
-          <description>OFF190 register</description>
+          <name>OFF199</name>
+          <description>OFF199 register</description>
           <addressOffset>0x85c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -26940,8 +26940,8 @@
           </fields>
         </register>
         <register>
-          <name>OFF190</name>
-          <description>OFF190 register</description>
+          <name>OFF200</name>
+          <description>OFF200 register</description>
           <addressOffset>0x860</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -26953,8 +26953,8 @@
           </fields>
         </register>
         <register>
-          <name>OFF190</name>
-          <description>OFF190 register</description>
+          <name>OFF201</name>
+          <description>OFF201 register</description>
           <addressOffset>0x864</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -26966,8 +26966,8 @@
           </fields>
         </register>
         <register>
-          <name>OFF190</name>
-          <description>OFF190 register</description>
+          <name>OFF202</name>
+          <description>OFF202 register</description>
           <addressOffset>0x868</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -26979,8 +26979,8 @@
           </fields>
         </register>
         <register>
-          <name>OFF190</name>
-          <description>OFF190 register</description>
+          <name>OFF205</name>
+          <description>OFF205 register</description>
           <addressOffset>0x874</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -26992,8 +26992,8 @@
           </fields>
         </register>
         <register>
-          <name>OFF190</name>
-          <description>OFF190 register</description>
+          <name>OFF206</name>
+          <description>OFF206 register</description>
           <addressOffset>0x878</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -27005,8 +27005,8 @@
           </fields>
         </register>
         <register>
-          <name>OFF190</name>
-          <description>OFF190 register</description>
+          <name>OFF207</name>
+          <description>OFF207 register</description>
           <addressOffset>0x87c</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -27018,8 +27018,8 @@
           </fields>
         </register>
         <register>
-          <name>OFF190</name>
-          <description>OFF190 register</description>
+          <name>OFF208</name>
+          <description>OFF208 register</description>
           <addressOffset>0x880</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -27031,8 +27031,8 @@
           </fields>
         </register>
         <register>
-          <name>OFF190</name>
-          <description>OFF190 register</description>
+          <name>OFF209</name>
+          <description>OFF209 register</description>
           <addressOffset>0x884</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -27044,8 +27044,8 @@
           </fields>
         </register>
         <register>
-          <name>OFF190</name>
-          <description>OFF190 register</description>
+          <name>OFF210</name>
+          <description>OFF210 register</description>
           <addressOffset>0x888</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -27057,8 +27057,8 @@
           </fields>
         </register>
         <register>
-          <name>OFF190</name>
-          <description>OFF190 register</description>
+          <name>OFF213</name>
+          <description>OFF213 register</description>
           <addressOffset>0x894</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
