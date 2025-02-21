@@ -3,13 +3,20 @@
 
 use mips_rt::entry;
 use panic_halt as _;
-use pic32mz2048efm144_pac::Peripherals as pac;
+use pic32mz2048efm144_pac::Peripherals;
 
 #[entry]
 fn main() -> ! {
-    let p = unsafe{pac::steal();};
+    let p = unsafe { Peripherals::steal() };
 
-    
+    //Set ANSEL B reg to 0, set PORT B pins to digital
+    p.portb.anselbset().write(|w| unsafe{w.bits(0)});
 
-    loop{};
+    //Clear bit 0 of TRISB, make PORT B bit 0 an output
+    p.portb.trisbclr().write(|w| unsafe{w.bits(1 << 0)});
+
+    //Set bit 0 of PORT B to 1
+    p.portb.latbset().write(|w| unsafe{w.bits(1 << 0)});
+
+    loop {}
 }
