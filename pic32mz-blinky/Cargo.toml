@@ -1,0 +1,10 @@
+[package]
+name = "pic32mz-blinky"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mips-mcu = "0.3.1"
+mips-rt = "0.3.6"
+panic-halt = "1.0.0"
+pic32mz2048efm144_pac = {path = "../pic32mz2048efm144_pac"}

@@ -1,0 +1,10 @@
+[package]
+name = "pic32mz2048efm144_pac"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+critical-section = "1.2.0"
+mips-mcu = "0.3.1"
+mips-rt = "0.3.6"
+vcell = "0.1.3"
