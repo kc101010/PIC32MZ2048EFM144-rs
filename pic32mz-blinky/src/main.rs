@@ -5,6 +5,14 @@ use mips_rt::entry;
 use panic_halt as _;
 use pic32mz2048efm144_pac::Peripherals;
 
+#[link_section = "cfg_sfrs"]
+pub static CONFIGSFRS: [u32; 4] = [
+    0x0fffffff,
+    0xfff9ffd9,
+    0xff7fcfd9,
+    0x7ffffffb,
+];
+
 #[entry]
 fn main() -> ! {
     let p = unsafe { Peripherals::steal() };
