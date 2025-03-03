@@ -5,13 +5,65 @@ use mips_rt::entry;
 use panic_halt as _;
 use pic32mz2048efm144_pac::Peripherals;
 
-#[link_section = "cfg_sfrs"]
-pub static CONFIGSFRS: [u32; 4] = [
+#[link_section = ".configsfrs"]
+#[used]
+pub static CONFIGSFRS: [u32; 48] = [
     0x0fffffff,
     0xfff9ffd9,
     0xff7fcfd9,
     0x7ffffffb,
+
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffffffff,
+    0xffff0000,     // Sequence number
 ];
+
+const SEQ_NO: u16 = 1;
+
+#[link_section = "seqsfrs"]
+#[used]
+pub static SEQSFRS: [u16; 2] = [SEQ_NO, !SEQ_NO];
 
 #[entry]
 fn main() -> ! {

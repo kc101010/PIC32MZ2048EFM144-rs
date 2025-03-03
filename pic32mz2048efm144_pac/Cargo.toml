@@ -3,6 +3,9 @@ name = "pic32mz2048efm144_pac"
 version = "0.1.0"
 edition = "2021"
 
+[features]
+rt = []
+
 [dependencies]
 critical-section = "1.2.0"
 mips-mcu = "0.3.1"

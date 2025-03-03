@@ -1,2 +1,6 @@
+
+BIN=pic32mz-blinky
+
 cargo build --release
-cargo objcopy --release $* -- -O ihex blinky.hex 
+rust-objdump -sDt --demangle target/mipsel-unknown-none/release/$BIN > $BIN.lst
+cargo objcopy --release $* -- -O ihex $BIN.hex 

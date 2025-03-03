@@ -1,21 +1,28 @@
 /*
-    Linker script for the PIC32MZ2048EFM144
-*/
+ * Memory regions of PIC32MZEF devices
+ *
+ * LENGTH values need to be adapted to specific device variant.
+ * REGION_ALIAS functions are used to put the startup code either into the boot
+ * flash memory or into the program flash memory keeping the boot flash free for
+ * a boot loader.
+ */
 
-PROVIDE(_ebase = 0xBFC00200);
-
-_RESET_ADDR         = 0xBFC00000;
-_GEN_EXCPT_ADDR     = _ebase + 0x180;
+/* Symbols used for interrupt-vector table generation */
+PROVIDE(_vector_spacing = 0x0001);
+PROVIDE(_ebase_address = 0x9D000000);  /* first 4 KiB of program flash */
 
 MEMORY
 {
-    //phys_prog_mem    : ORIGIN = 0x1D000000, LENGTH = 0x0007FFFF
-    //phys_boot_flash  : ORIGIN = 0x1FC00000, LENGTH = 0x00073FFF
-    //sfrs             : ORIGIN = 0x1F800000, LENGTH = 0x000FFFFF
-
-    kseg1_boot_flash      : ORIGIN = 0xBFC00000, LENGTH = 0x00073FFF
-    kseg1_prog_flash (rx) : ORIGIN = 0xBD000000, LENGTH = 0x0007FFFF
-    kseg1_ram        (w!x): ORIGIN = 0xA0000000, LENGTH = 0x0001FFFF
-    kseg1_sfrs            : ORIGIN = 0xBF800000, LENGTH = 0x000FFFFF
-    cfg_sfrs              : ORIGIN = 0xBF800000, LENGTH = 0x600
+    boot_flash          (rx)    : ORIGIN = 0xBFC00000, LENGTH = 64k
+    program_flash       (rx)    : ORIGIN = 0x9D000000, LENGTH = 2M
+    sram                (w!x)   : ORIGIN = 0x80000000, LENGTH = 512k
+    /* boot flash 1 sequence and configuration words */
+    configsfrs                  : ORIGIN = 0xBFC4FF40, LENGTH = 192
 }
+
+REGION_ALIAS("exception_mem", program_flash)
+REGION_ALIAS("program_mem", program_flash)
+REGION_ALIAS("data_mem", sram)
+
+REGION_ALIAS(reset_mem, boot_flash)
+
