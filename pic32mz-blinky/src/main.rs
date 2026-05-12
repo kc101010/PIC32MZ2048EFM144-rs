@@ -77,5 +77,6 @@ fn main() -> ! {
 
     //toggle LED with delay
     loop {
+        ;
     }
 }
