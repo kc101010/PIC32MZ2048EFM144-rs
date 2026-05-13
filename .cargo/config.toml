@@ -1,5 +1,5 @@
 [target.mipsel-unknown-none]
-rustflags = ["-C", "link-arg=-T device.x",
+rustflags = ["-C", "link-arg=-Tdevice.x",
              "-C", "relocation-model=static"]
 
 
